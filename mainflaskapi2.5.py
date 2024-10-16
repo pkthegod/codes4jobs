@@ -146,4 +146,4 @@ def test_ip():
 
 if __name__ == '__main__':
     from waitress import serve
-    serve(app, host='192.168.50.75', port=5101)
+    serve(app, host='ip-do-servidor', port=porta-do-servico)

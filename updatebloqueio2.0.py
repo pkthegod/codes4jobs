@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configurações
-API_URL = "https://api.procyon.tec.br"  # Ajuste para o endereço correto do seu servidor
+API_URL = "https://api.seudominio.com.br"  # Ajuste para o endereço correto do seu servidor
 API_KEY = os.getenv('API_KEY')  # A chave API será carregada de uma variável de ambiente
 LOCAL_RPZ_FILE = "/etc/bind/rpz/db.rpz.zone.hosts"
 
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if not API_KEY:
-        raise ValueError("API_KEY não definida. Configure-a no arquivo .env")
+        raise ValueError("API_KEY não definida. Configure-a no arquivo apropriado")
 
     if args.force:
         print("Forçando download do arquivo RPZ...")
